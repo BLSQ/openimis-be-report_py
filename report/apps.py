@@ -37,6 +37,16 @@ DEFAULT_CFG = {
     "gql_mutation_report_add_perms": ["131224"],
     "gql_mutation_report_edit_perms": ["131225"],
     "gql_mutation_report_delete_perms": ["131226"],
+
+    "gql_reports_nhia_new_enrollments_report_perms": ["131227"],
+    "gql_reports_nhia_non_active_members_report_perms": ["131228"],
+    "gql_reports_nhia_policy_renewals_report_perms": ["131229"],
+    "gql_reports_nhia_claims_paid_report_perms": ["131230"],
+    "gql_reports_nhia_claims_rejected_report_perms": ["131231"],
+    "gql_reports_nhia_claims_pending_report_perms": ["131232"],
+    "gql_reports_bill_detail_report_perms": ["131233"],
+    "gql_reports_nhia_financial_report_report_perms": ["131234"],
+    "gql_reports_nhia_claim_details_report_perms": ["131235"],
 }
 
 
@@ -70,6 +80,15 @@ class ReportConfig(AppConfig):
     gql_reports_control_number_assignment_perms: []
     gql_reports_overview_of_commissions_perms: []
     gql_reports_claim_history_report_perms: []
+    gql_reports_nhia_new_enrollments_report_perms: []
+    gql_reports_nhia_non_active_members_report_perms: []
+    gql_reports_nhia_policy_renewals_report_perms: []
+    gql_reports_nhia_claims_paid_report_perms: []
+    gql_reports_nhia_claims_rejected_report_perms: []
+    gql_reports_nhia_claims_pending_report_perms: []
+    gql_reports_bill_detail_report_perms: []
+    gql_reports_nhia_financial_report_report_perms: []
+    gql_reports_nhia_claim_details_report_perms: []
 
     reports = []
 
@@ -152,6 +171,33 @@ class ReportConfig(AppConfig):
         ]
         ReportConfig.gql_reports_claim_history_report_perms = cfg[
             "gql_reports_claim_history_report_perms"
+        ]
+        ReportConfig.gql_reports_nhia_new_enrollments_report_perms = cfg[
+            "gql_reports_nhia_new_enrollments_report_perms"
+        ]
+        ReportConfig.gql_reports_nhia_non_active_members_report_perms = cfg[
+            "gql_reports_nhia_non_active_members_report_perms"
+        ]
+        ReportConfig.gql_reports_nhia_policy_renewals_report_perms = cfg[
+            "gql_reports_nhia_policy_renewals_report_perms"
+        ]
+        ReportConfig.gql_reports_nhia_claims_paid_report_perms = cfg[
+            "gql_reports_nhia_claims_paid_report_perms"
+        ]
+        ReportConfig.gql_reports_nhia_claims_rejected_report_perms = cfg[
+            "gql_reports_nhia_claims_rejected_report_perms"
+        ]
+        ReportConfig.gql_reports_nhia_claims_pending_report_perms = cfg[
+            "gql_reports_nhia_claims_pending_report_perms"
+        ]
+        ReportConfig.gql_reports_bill_detail_report_perms = cfg[
+            "gql_reports_bill_detail_report_perms"
+        ]
+        ReportConfig.gql_reports_nhia_financial_report_report_perms = cfg[
+            "gql_reports_nhia_financial_report_report_perms"
+        ]
+        ReportConfig.gql_reports_nhia_claim_details_report_perms = cfg[
+            "gql_reports_nhia_claim_details_report_perms"
         ]
 
     @classmethod
